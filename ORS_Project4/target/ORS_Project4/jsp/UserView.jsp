@@ -96,7 +96,7 @@
                    </tr>
 				
                 <%}else{ %>
-    <tr><th style="padding: 3px"></th></tr>          
+    <tr><th style="padding: 3px"></th></tr>
 
                 <tr>
                     <th align="left">Password <span style="color: red">*</span> :</th>
@@ -104,6 +104,7 @@
                        <td style="position: fixed"> <font  color="red"> <%=ServletUtility.getErrorMessage("password", request)%></font></td>
                 </tr>
     <tr><th style="padding: 3px"></th></tr>          
+
 
                 <tr>
                     <th align="left" >Confirm Password <span style="color: red">*</span> :</th>
@@ -142,7 +143,7 @@
                       <td style="position: fixed;">	<font color="red"> <%=ServletUtility.getErrorMessage("dob", request)%></font></td>
                 </tr>
                 <tr>
-    <tr><th style="padding: 3px"></th></tr>          
+    <tr><th style="padding: 3px"></th></tr>         
                 
                 <tr>
                     <th align="left">Mobile No <span style="color: red">*</span> :</th>

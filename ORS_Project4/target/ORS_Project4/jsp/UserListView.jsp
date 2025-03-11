@@ -59,6 +59,8 @@
 				List rlist = (List) request.getAttribute("RoleList");
 
 				List ulist = (List) request.getAttribute("LoginId");
+				
+				ulist = (List) request.getAttribute("DOB");
 
 				int next = DataUtility.getInt(request.getAttribute("nextlist").toString());
 			%>
@@ -69,6 +71,7 @@
 				int pageSize = ServletUtility.getPageSize(request);
 				int index = ((pageNo - 1) * pageSize) + 1;
 
+				
 				List list = ServletUtility.getList(request);
 				Iterator<UserBean> it = list.iterator();
 
@@ -86,13 +89,16 @@
 						<label>LoginId</font> :
 					</label> <input type="text" name="loginid" placeholder="Enter Login-Id"
 						value="<%=ServletUtility.getParameter("login", request)%>">
+						
 						&emsp; <label>Role</font> :
 					</label> <%=HTMLUtility.getList("roleid", String.valueOf(bean.getRoleId()), rlist)%>
-						&nbsp; <%-- <%=HTMLUtility.getList("loginid", String.valueOf(bean.getRoleId()), ulist)%>
- --%> &nbsp; <%-- <label>MobileNo</font> :</label>
+						&nbsp;  <%-- <%=HTMLUtility.getList("loginid", String.valueOf(bean.getId()), ulist)%> --%>
+ &nbsp; <%-- <label>MobileNo</font> :</label>
  					 <input
 						type="number" name="mobile" placeholder="Enter mobile no"
 						value="<%=ServletUtility.getParameter("mobile", request)%>"> --%>
+						
+						<%-- <%=HTMLUtility.getList("DOB", String.valueOf(bean.getId()), ulist) %> --%>
 
 						<label>dob</font> :
 					</label><input type="text" name="dob" id="udate" readonly="readonly"
@@ -123,6 +129,7 @@
 					<th>Mobile No</th>
 					<th>Edit</th>
 				</tr>
+
 
 				<%
 					while (it.hasNext()) {
@@ -198,6 +205,7 @@
 				type="hidden" name="pageSize" value="<%=pageSize%>">
 	</form>
 	</br>
+	
 	</br>
 	</br>
 	</br>

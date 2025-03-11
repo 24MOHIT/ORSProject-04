@@ -27,7 +27,7 @@ public interface ORSView {
 	public String ROLE_LIST_VIEW = PAGE_FOLDER + "/RoleListView.jsp";
 	public String USER_REGISTRATION_VIEW = PAGE_FOLDER + "/UserRegistrationView.jsp";
 	public String LOGIN_VIEW = PAGE_FOLDER + "/LoginView.jsp";
-	public static String WELCOME_VIEW = PAGE_FOLDER + "/Welcome.jsp";
+	public String WELCOME_VIEW = PAGE_FOLDER + "/Welcome.jsp";
 	public String CHANGE_PASSWORD_VIEW = PAGE_FOLDER + "/ChangePasswordView.jsp";
 	public String MY_PROFILE_VIEW = PAGE_FOLDER + "/MyProfileView.jsp";
 	public String FORGET_PASSWORD_VIEW = PAGE_FOLDER + "/ForgetPasswordView.jsp";
@@ -44,6 +44,16 @@ public interface ORSView {
 
 	public String PRODUCT_VIEW = PAGE_FOLDER + "/ProductView.jsp";
 	public String PRODUCT_LIST_VIEW = PAGE_FOLDER + "/ProductListView.jsp";
+	
+	public String DOCTER_VIEW = PAGE_FOLDER + "/DocterView.jsp";
+	public String DOCTER_LIST_VIEW = PAGE_FOLDER + "/DocterListView.jsp";
+	
+	public String PATIENT_VIEW = PAGE_FOLDER + "/PatientView.jsp";
+	public String PATIENT_LIST_VIEW = PAGE_FOLDER + "/PatientListView.jsp";
+	
+	public String PURCHASE_VIEW = PAGE_FOLDER + "/PurchaseView.jsp";
+	public String PURCHASE_LIST_VIEW = PAGE_FOLDER + "/PurchaseListView.jsp";
+	
 	// public String ERROR_VIEW5 = PAGE_FOLDER + "/ErrorView5.jsp";
 
 	public String MARKSHEET_CTL = APP_CONTEXT + "/ctl/MarksheetCtl";
@@ -77,5 +87,14 @@ public interface ORSView {
 
 	public String PRODUCT_CTL = APP_CONTEXT + "/ctl/ProductCtl";
 	public String PRODUCT_LIST_CTL = APP_CONTEXT + "/ctl/ProductListCtl";
+	
+	public String DOCTER_CTL = APP_CONTEXT + "/ctl/DocterCtl";
+	public String DOCTER_LIST_CTL = APP_CONTEXT + "/ctl/DocterListCtl";
+	
+	public String PATIENT_CTL = APP_CONTEXT + "/ctl/PatientCtl";
+	public String PATIENT_LIST_CTL = APP_CONTEXT + "/ctl/PatientListCtl";
+	
+	public String PURCHASE_CTL = APP_CONTEXT + "/ctl/PurchaseCtl";
+	public String PURCHASE_LIST_CTL = APP_CONTEXT + "/ctl/PurchaseListCtl";
 
 }

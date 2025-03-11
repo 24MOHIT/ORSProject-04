@@ -62,9 +62,9 @@ public class EmailUtility {
 	 */
 	static {
 		props.put("mail.smtp.host", SMTP_HOST_NAME);
-		props.put("mail.smtp.auth", "true");
 		props.put("mail.smtp.starttls.enable", "true");
 		props.put("mail.smtp.ssl.protocols", "TLSv1.2");
+		props.put("mail.smtp.auth", "true");
 		props.put("mail.debug", "true");
 		props.put("mail.smtp.port", SMTP_PORT);
 		props.put("mail.smtp.socketFactory.port", SMTP_PORT);
@@ -86,7 +86,7 @@ public class EmailUtility {
 			Session session = Session.getDefaultInstance(props, new javax.mail.Authenticator() {
 				protected PasswordAuthentication getPasswordAuthentication() {
 					return new PasswordAuthentication(emailFromAddress, emailPassword);
-				}
+				} 
 			});
 
 			// Make debug mode true to display debug messages at console
@@ -96,7 +96,7 @@ public class EmailUtility {
 			Message msg = new MimeMessage(session);
 			InternetAddress addressFrom = new InternetAddress(emailFromAddress);
 			msg.setFrom(addressFrom);
-
+  
 			// Set TO addresses
 			String[] emailIds = new String[0];
 
@@ -146,7 +146,7 @@ public class EmailUtility {
 
 			if (addressBcc.length > 0) {
 				msg.setRecipients(Message.RecipientType.BCC, addressBcc);
-			}
+			} 
 
 			// Setting the Subject and Content Type
 			msg.setSubject(emailMessageDTO.getSubject());
@@ -166,9 +166,7 @@ public class EmailUtility {
 			Transport.send(msg);
 
 		} catch (Exception ex) {
-			ex.printStackTrace();
-			throw new ApplicationException("Email " + ex.getMessage());
+//            throw new ApplicationException("Email " + ex.getMessage());
 		}
 	}
-
 }

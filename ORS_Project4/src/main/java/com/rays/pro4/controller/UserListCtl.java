@@ -50,6 +50,8 @@ public class UserListCtl extends BaseCtl{
 
 			request.setAttribute("RoleList", rlist);
 			request.setAttribute("LoginId", ulist);
+			
+			request.setAttribute("DOB", ulist);
 
 		} catch (ApplicationException e) {
 			e.printStackTrace();
@@ -73,6 +75,8 @@ public class UserListCtl extends BaseCtl{
 	
 	//	bean.setMobileNo(DataUtility.getString(request.getParameter("mobile")));
 		bean.setDob(DataUtility.getDate(request.getParameter("dob")));
+		
+//		bean.setId(DataUtility.getLong(request.getParameter("DOB")));
 
 
 		return bean;
@@ -97,6 +101,7 @@ public class UserListCtl extends BaseCtl{
 
 		UserBean bean = (UserBean) populateBean(request);
 		String op = DataUtility.getString(request.getParameter("operation"));
+		
 
 //	        get the selected checkbox ids array for delete list
 

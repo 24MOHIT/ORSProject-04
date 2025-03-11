@@ -112,6 +112,7 @@
 					<td>
 						<%
 							HashMap map = new HashMap();
+						
 
 							map.put("Male", "Male");
 							map.put("Female", "Female");

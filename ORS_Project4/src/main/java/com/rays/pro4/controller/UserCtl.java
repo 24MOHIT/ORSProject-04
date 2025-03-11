@@ -198,6 +198,9 @@ public class UserCtl extends BaseCtl {
 	 * javax.servlet.http.HttpServlet#doGet(javax.servlet.http.HttpServletRequest,
 	 * javax.servlet.http.HttpServletResponse)
 	 */
+	/**
+	 *
+	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		log.debug("UserCtl Method doGet Started");
@@ -217,7 +220,7 @@ public class UserCtl extends BaseCtl {
 			} catch (ApplicationException e) {
 				log.error(e);
 				ServletUtility.handleException(e, request, response);
-				return;
+		    		return;
 			}
 		}
 
