@@ -83,18 +83,22 @@
 					href="<%=ORSView.FACULTY_CTL%>">Add Faculty</b></a> | <a
 					href="<%=ORSView.FACULTY_LIST_CTL%>">Faculty List</b></a> | <a
 					href="<%=ORSView.TIMETABLE_CTL%>">Add TimeTable</b></a> | <a
-					href="<%=ORSView.TIMETABLE_LIST_CTL%>">TimeTable List</b></a> | <a
+					href="<%=ORSView.TIMETABLE_LIST_CTL%>">TimeTable List</b></a> 
+				<%-- 	 <a
 					href="<%=ORSView.PRODUCT_CTL%>">Add Product</b></a> | <a
-					href="<%=ORSView.PRODUCT_LIST_CTL%>">Product List</b></a> |
+					href="<%=ORSView.PRODUCT_LIST_CTL%>">Product List</b></a> --%> |
 					
-					<a href="<%=ORSView.DOCTER_CTL%>">Add Docter</a>|
+					<%-- <a href="<%=ORSView.DOCTER_CTL%>">Add Docter</a>|
 					<a href="<%=ORSView.DOCTER_LIST_CTL%>">Docter List</a>|
 					
 					<a href="<%=ORSView.PATIENT_CTL%>">Add Patient</a>|
 					<a href="<%=ORSView.PATIENT_LIST_CTL%>">Patient List</a>|
 					
 					<a href="<%=ORSView.PURCHASE_CTL%>">Add Purchase</a>|
-					<a href="<%=ORSView.PURCHASE_LIST_CTL%>">Purchase List</a>|
+					<a href="<%=ORSView.PURCHASE_LIST_CTL%>">Purchase List</a>| --%>
+					
+					<a href="<%=ORSView.EMPLOYEE_CTL%>">Add Employee</a>|
+					<a href="<%=ORSView.EMPLOYEE_LIST_CTL%>">Employee List</a>|
 					
 					
 					 <a
